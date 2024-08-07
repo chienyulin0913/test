@@ -1,3 +1,4 @@
+# This is copied for practicing purposes
 
 <img src='imgs/horse2zebra.gif' align="right" width=384>
 
