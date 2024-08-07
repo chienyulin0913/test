@@ -15,17 +15,17 @@ echo "Specified [$FILE]"
 
 # URL map (add your direct download links here)
 declare -A URL_MAP
-URL_MAP["Boston"]="https://drive.google.com/file/d/1OAtnflwankcvDe7DaVNCh1KmiYXVDsyY"
-URL_MAP["tiles2"]="https://drive.google.com/file/d/1-ZCX-HMEgSctyPrxyXgcwvJXUd-TcACb"
+URL_MAP["Boston"]="1OAtnflwankcvDe7DaVNCh1KmiYXVDsyY"
+URL_MAP["tiles2"]="1-ZCX-HMEgSctyPrxyXgcwvJXUd-TcACb"
 
-# Get the URL for the specified dataset
-URL=${URL_MAP[$FILE]}
+# Get the file ID for the specified dataset
+FILE_ID=${FILE_ID_MAP[$FILE]}
 
 TAR_FILE=./datasets/$FILE.tar.gz
 TARGET_DIR=./datasets/$FILE/
 
-# Download the .tar.gz file
-wget -N $URL -O $TAR_FILE
+# Download the .tar.gz file using gdown
+gdown --id $FILE_ID -O $TAR_FILE
 
 # Create the target directory if it does not exist
 mkdir -p $TARGET_DIR
