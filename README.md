@@ -1,4 +1,4 @@
-# This is copied for practicing purposes
+# This is copied from [pytorch-CycleGAN-and-pix2pix]([https://github.com/taesungp/contrastive-unpaired-translation](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/tree/master)) for practicing purposes
 
 <img src='imgs/horse2zebra.gif' align="right" width=384>
 
