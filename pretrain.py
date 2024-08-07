@@ -17,7 +17,7 @@ if __name__ == '__main__':
     total_iters = 0                # the total number of training iterations
 
     # Define the Google Drive directory for saving models
-    save_dir = '/content/drive/MyDrive/your_save_directory'
+    save_dir = '/content/drive/MyDrive/Model'
     os.makedirs(save_dir, exist_ok=True)
 
     for epoch in range(opt.epoch_count, opt.n_epochs + opt.n_epochs_decay + 1):    # outer loop for different epochs; we save the model by <epoch_count>, <epoch_count>+<save_latest_freq>
