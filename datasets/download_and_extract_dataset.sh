@@ -15,8 +15,8 @@ echo "Specified [$FILE]"
 
 # URL map (add your direct download links here)
 declare -A URL_MAP
-URL_MAP["Boston"]="https://drive.google.com/file/d/1OAtnflwankcvDe7DaVNCh1KmiYXVDsyY/view?usp=drive_link"
-URL_MAP["tiles2"]="https://drive.google.com/file/d/1-ZCX-HMEgSctyPrxyXgcwvJXUd-TcACb/view?usp=drive_link"
+URL_MAP["Boston"]="https://drive.google.com/file/d/1OAtnflwankcvDe7DaVNCh1KmiYXVDsyY"
+URL_MAP["tiles2"]="https://drive.google.com/file/d/1-ZCX-HMEgSctyPrxyXgcwvJXUd-TcACb"
 
 # Get the URL for the specified dataset
 URL=${URL_MAP[$FILE]}
